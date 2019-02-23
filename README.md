@@ -6,11 +6,11 @@
 <iframe title="Chart: San Francisco Population (in thousands)" aria-describedby="Resident population of San Francisco" id="datawrapper-chart-MrVXi" src="//datawrapper.dwcdn.net/MrVXi/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script>
 <br>
 <iframe title="Chart: Houses Sold in SF" aria-describedby="The number of houses sold in SF each year" id="datawrapper-chart-Uslki" src="//datawrapper.dwcdn.net/Uslki/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script>
-<br>
+<br><br>
   The two charts above show the population of SF and the number of houses sold in SF. If you look at the population chart, you can see that there is a slight dip from 2009-2010, from 815,00 to 805,000. Similarly, if you look at the houses sold graph, you can also see the dip leading up to 2009 in the houses sold. 
-<br>
+<br><br>
   I hypothesize that this population decrease might be related to the 2008 US housing crisis, where the housing market crashed. This might have led to people being unable to afford to continue to live in SF, resulting in a population decrease. 
-<br>
+<br><br>
   I chose to use two separate graphs instead of combining the two charts into one line graph in order to better illustrate the dip shown on the population graph. This could have also been accomplished with two separate y-axis on one chart, distinguised by color, but datawrapper was unable to provide that fundtionality. 
 
 <br>
