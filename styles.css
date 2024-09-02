@@ -5,6 +5,10 @@ body {
     text-align: center;
     padding: 40px 20px;
     line-height: 1.6;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 header {
@@ -64,7 +68,7 @@ input[type="email"]:focus {
 }
 
 button {
-    padding: 12px 25px;
+    padding: 14px 25px;
     font-size: 16px;
     background-color: #D2691E;
     color: #FFFFFF;
@@ -102,5 +106,26 @@ button:active {
         width: 100%;
         border-radius: 25px;
         margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgba(245, 222, 179, 0.3); /* More transparent */
+    border-top: 1px solid rgba(210, 105, 30, 0.2); /* More subtle border */
+}
+
+footer p {
+    font-size: 12px;
+    color: rgba(139, 69, 19, 0.6); /* More transparent text color */
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10psx;
+    }
+
+    footer p {
+        font-size: 10px;
     }
 }
