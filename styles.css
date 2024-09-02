@@ -48,8 +48,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
+    transition: opacity 0.3s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 input[type="email"] {
@@ -128,4 +131,71 @@ footer p {
     footer p {
         font-size: 10px;
     }
+}
+
+#subscriptionContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    height: 50px; /* Adjust based on your input height */
+}
+
+#successMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+#successMessage.visible {
+    opacity: 1;
+}
+
+.checkmark-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #D2691E; /* Same as subscribe button color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.checkmark {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.checkmark::after {
+    content: '';
+    width: 14px;
+    height: 7px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 8px;
+}
+
+#successMessage p {
+    color: #D2691E; /* Same as subscribe button color */
+    font-weight: bold;
+    margin: 0;
+}
+
+.hidden {
+    display: none !important;
 }
