@@ -199,3 +199,13 @@ footer p {
 .hidden {
     display: none !important;
 }
+
+#socialMedia {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
