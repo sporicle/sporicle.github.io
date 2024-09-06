@@ -26,3 +26,21 @@ $(document).ready(function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const instagramLink = document.querySelector('.instagram-link');
+    const webUrl = 'https://www.instagram.com/andyw_says';
+    const appUrl = instagramLink.href;
+
+    instagramLink.addEventListener('click', function(e) {
+        if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            e.preventDefault();
+            window.open(webUrl, '_blank');
+        } else {
+            // Attempt to open the app
+            setTimeout(function() {
+                window.location = webUrl;
+            }, 2500);
+        }
+    });
+});
