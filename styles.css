@@ -92,26 +92,6 @@ button:active {
     box-shadow: none;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    #emailForm {
-        flex-direction: column;
-    }
-
-    input[type="email"], button {
-        width: 100%;
-        border-radius: 25px;
-        margin-bottom: 10px;
-    }
-}
-
 footer {
     margin-top: auto;
     background-color: rgba(245, 222, 179, 0.3); /* More transparent */
