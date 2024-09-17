@@ -25,6 +25,41 @@ $(document).ready(function() {
             }
         });
     });
+
+    const carousel = $('#mascot-carousel');
+    const images = carousel.find('.mascot-image');
+    let currentIndex = 0;
+
+    function rotateCarousel(direction = 1) {
+        currentIndex = (currentIndex + direction + 3) % 3;
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        images.css('transition', 'all 0.5s ease');
+        images.removeClass('center');
+        
+        images.each(function(index) {
+            const offset = (index - currentIndex + 3) % 3;
+            if (offset === 0) {
+                $(this).css('transform', 'translateX(0) scale(1)').css('z-index', '2').addClass('center');
+            } else if (offset === 1) {
+                $(this).css('transform', 'translateX(70px) scale(0.9)').css('z-index', '1');
+            } else {
+                $(this).css('transform', 'translateX(-70px) scale(0.9)').css('z-index', '1');
+            }
+        });
+    }
+
+    let intervalId = setInterval(() => rotateCarousel(1), 3000);
+
+    images.click(function() {
+        const clickedIndex = images.index(this);
+        const direction = (clickedIndex - currentIndex + 3) % 3 === 1 ? 1 : -1;
+        clearInterval(intervalId);
+        rotateCarousel(direction);
+        intervalId = setInterval(() => rotateCarousel(1), 3000);
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
